@@ -34,7 +34,7 @@ Last updated: 2025-01-16
 
 ## Q: Provisioning a QnA Maker Service
 
-> You plan to provision a QnA Maker service in a new resource group named RG1. In RG1, you create an `App Service plan` named AP1. Which two Azure resources are automatically created in RG1 when you provision the QnA Maker service? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.
+> You plan to provision a QnA Maker service in a new resource group named RG1. In RG1, you create an `App Service plan` named AP1. Which two Azure resources are automatically created in RG1 when you provision the QnA Maker service? Each correct answer presents part of the solution. 
 
 **Options:**
 
@@ -47,7 +47,6 @@ Last updated: 2025-01-16
 ## Q: Implementing Sentiment Analysis in Customer Feedback System
 
 > You are developing a customer feedback system that will analyze text feedback from users. You need to implement sentiment analysis to determine the overall sentiment of the feedback. The solution must minimize development effort and provide accurate sentiment scores. Which Azure AI Service should you use for each requirement? To answer, select the appropriate options from the answer area.
-
 
 To analyze the sentiment of text feedback: ___________________________
 
@@ -69,8 +68,7 @@ To detect the language of the text feedback: ___________________________
 
 ## Q: Configuring an App for Vision Impaired Users
 
-> You have an app that analyzes images by using the Computer Vision API. You need to configure the app to provide an output for users who are vision impaired. The solution must provide the output in complete sentences.
-> Which API call should you perform?
+> You have an app that analyzes images by using the Computer Vision API. You need to configure the app to provide an output for users who are vision impaired. The solution must provide the output in complete sentences. Which API call should you perform?
 
 **Options:**
 
@@ -92,7 +90,7 @@ To detect the language of the text feedback: ___________________________
 | File5 | GIF  | 15 MB |
 | File6 | JPG  | 30 MB |
 
-> Which three files can you use to train the model? Each correct answer presents a complete solution.
+> Which three files can you use to train the model?
 
 **Options:**
 
@@ -173,7 +171,7 @@ __________________________ \
 > - Apply partial updates to the existing resource. <br/> 
 > - Ensure the resource remains in the same region.  <br/> 
 > - Use the appropriate HTTP method for partial updates.  <br/> 
-> How should you complete the HTTP request to update the resource? Select the appropriate options in the answer area.
+> How should you complete the HTTP request to update the resource? 
 
 ```http
 __________ https://management.azure.com/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx/resourceGroups/RG3/providers/Microsoft.AIServices/accounts/CV1?api-version=2017-04-18
@@ -263,7 +261,7 @@ var result = await client.Features.AddPhraseListAsync(
 
 ## Q: Implementing Image Classification with Custom Vision
 
-> You are developing an application that needs to classify images into different categories. You plan to use Azure Custom Vision to achieve this. Which steps should you follow to create and train a custom image classification model? To answer, select the appropriate steps from the answer area.
+> You are developing an application that needs to classify images into different categories. You plan to use Azure Custom Vision to achieve this. Which steps should you follow to create and train a custom image classification model?
 
 **Options:**
 

@@ -14,7 +14,7 @@ Last updated: 2025-01-16
 
 ## Content
 
-- [Artificial Intelligence: Sample Questions and Answers](./0_AI-questions.md)
+- [Planning and Managing Azure AI Solutions: Sample Questions and Answers](./0_AI-questions.md)
 - [Computer Vision & NLP: Sample Questions and Answers](./1_CV_NLP-questions.md)
 - [Generative AI: Sample Questions and Answers](./2_GenAI-questions.md)
 

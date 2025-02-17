@@ -9,13 +9,13 @@ Last updated: 2025-01-16
 
 ----------
 
-> Implement computer vision solutions
-> Implement natural language processing solutions
-
 > [!NOTE]
 > The questions and answers provided in this study guide are for practice purposes only and are not official practice questions.
 > They are intended to help you prepare for the [AI-102 Microsoft certification exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification).
 > For additional preparation materials and the most up-to-date information, please refer to the [official Microsoft documentation](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification#certification-prepare-for-the-exam).
+
+> - Implement computer vision solutions <br/> 
+> - Implement natural language processing solutions
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
@@ -31,6 +31,110 @@ Last updated: 2025-01-16
 
 </details>
 
+## Q: Regenerating an API Key
+
+> You successfully run the following HTTP request.
+
+```http
+POST https://management.azure.com/subscriptions/18e51a87-3a69-47a8-aedc-a5474517f08a/resourceGroups/RGI/providers/Microsoft.CognitiveServices/accounts/conosci1/regenerateKey?api-version=2017-04-18
+
+Body {"keyName": "Key2"}
+```
+
+> What is the result of the request?
+
+**Options:**
+
+- [ ] `A new query key was generated.` ❌: `This is incorrect because the request regenerates a subscription key, not a query key.`
+- [ ] `A key for Azure Cognitive Services was generated in Azure Key Vault.` ❌: `This is incorrect because the request regenerates a key for the Cognitive Services account, not in Azure Key Vault.`
+- [ ] `The primary subscription key and the secondary subscription key were rotated.` ❌: `This is incorrect because the request regenerates only one key, not both.`
+- [X] `The secondary subscription key was reset.` ✅: `This is correct because the request regenerates the secondary subscription key specified by "Key2".`
+
+## Q: Creating a Text Analytics Resource
+
+> You have the following C# method for creating Azure Cognitive Services resources programmatically.
+
+```csharp
+static void create_resource(CognitiveServicesManagementClient client, string resource_name, string kind, string account_tier, string location) 
+{
+    CognitiveServicesAccount parameters = new CognitiveServicesAccount(null, null, kind, location, resource_name,
+        new CognitiveServicesAccountProperties(), new Sku(account_tier));
+    client.CognitiveServicesAccounts.create(resource_group_name, account_tier,
+        parameters);
+}
+```
+
+> You need to call the method to create a Text Analytics resource in the West US Azure region. The resource will be used for sentiment analysis. Which choice should you make?
+
+**Options:**
+
+- [X] `create_resource(client, "test", "TextAnalytics", "S0", "westus")` ✅: `This is correct because it specifies the Text Analytics resource kind, which is used for sentiment analysis.`
+- [ ] `create_resource(client, "test", "ComputerVision", "F0", "westus")` ❌: `This is incorrect because it specifies the Computer Vision resource kind, not the Text Analytics resource kind.`
+- [ ] `create_resource(client, "test", "CustomVision.Training", "S0", "westus")` ❌: `This is incorrect because it specifies the Custom Vision Training resource kind, not the Text Analytics resource kind.`
+- [ ] `create_resource(client, "test", "CustomVision.Prediction", "S0", "westus")` ❌: `This is incorrect because it specifies the Custom Vision Prediction resource kind, not the Text Analytics resource kind.`
+
+## Q: Deploying Text Analytics API Container
+
+> You plan to deploy a containerized version of an Azure Cognitive Services service that will be used for text analysis. You configure `https://contoso.cognitiveservices.azure.com` as the endpoint URL for the service, and you pull the latest version of the Text Analytics API container image. You need to run the container on an Azure virtual machine by using Docker. You configure the command to `/text/answer`, select the appropriate options in the answer area.
+
+```bash
+docker run --rm -it -p 5000:5000 --memory 8g --cpus 1 \
+__________________________ \
+-e Eula=accept \
+-e Billing=________________ \
+-e ApiKey=xxxxxxxxxxxxxxxxxxxxxx
+```
+
+**Options for the Container Image:**
+
+- [ ] mcr.microsoft.com/azure-cognitive-services/textanalytics/keyphrase ❌: `This is incorrect because it specifies the container image for the keyphrase extraction feature, not the sentiment analysis feature.`
+- [X] mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment ✅: `This is correct because it specifies the container image for the sentiment analysis feature.`
+
+**Options for Billing:**
+
+- [ ] http://contoso.blob.core.windows.net ❌: `This is incorrect because it specifies a general Azure Blob Storage endpoint, not the specific billing endpoint for the service.`
+- [X] https://contoso.cognitiveservices.azure.com ✅: `This is correct because it specifies the endpoint URL for the Cognitive Services, which can be used as the billing endpoint.`
+
+## Q: Updating a Computer Vision Resource
+
+> Your company has an existing Azure Computer Vision resource that needs to be updated to include a new feature for analyzing handwritten text. The solution must:
+> - Apply partial updates to the existing resource. <br/> 
+> - Ensure the resource remains in the same region.  <br/> 
+> - Use the appropriate HTTP method for partial updates.  <br/> 
+> How should you complete the HTTP request to update the resource? Select the appropriate options in the answer area.
+
+```http
+__________ https://management.azure.com/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx/resourceGroups/RG3/providers/Microsoft.CognitiveServices/accounts/CV1?api-version=2017-04-18
+
+{
+  "properties": {
+    "features": [
+      "__________"
+    ]
+  }
+}
+```
+
+**Options:**
+
+- [ ] POST ❌: `This is incorrect because POST is typically used to create a new resource without specifying the resource identifier.`
+- [ ] PUT ❌: `This is incorrect because PUT is used to create or update a resource at a specified URI, ensuring idempotency.`
+- [ ] CognitiveServices ❌: `This is incorrect because it specifies the general Azure Cognitive Services resource, rather than the specific Computer Vision service.`
+- [ ] TextAnalytics ❌: `This is incorrect because it specifies a different service within Azure Cognitive Services, not related to computer vision.`
+- [X] PATCH ✅: `This is correct because PATCH is used to apply partial updates to an existing resource.`
+- [X] ComputerVision ✅: `This is correct because it specifies the specific Azure Cognitive Services resource for computer vision tasks.`
+
+```http
+PATCH https://management.azure.com/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx/resourceGroups/RG3/providers/Microsoft.CognitiveServices/accounts/CV1?api-version=2017-04-18
+
+{
+  "properties": {
+    "features": [
+      "ComputerVision"
+    ]
+  }
+}
+```
 ## Q: Language Understanding Model
 
 > You've got 4659 chatbots, each with its own Language Understanding model.
@@ -80,10 +184,10 @@ var result = await client.Features.AddPhraseListAsync(
 > Which services should you integrate into the chatbot?
 
 **Options:**
-- [ ] **A. QnA Maker, Language Understanding, and Dispatch** ❌: `This is incorrect because it does not include sentiment analysis.` 
-- [ ] **B. Translator, Speech, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
-- [X] **C. Language Understanding, Text Analytics, and QnA Maker** ✅: `This is correct because it supports chit-chat, knowledge base, multilingual models, and performs sentiment analysis.`
-- [ ] **D. Text Analytics, Translator, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
+- [ ] **Translator, Speech, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
+- [ ] **QnA Maker, Language Understanding, and Dispatch** ❌: `This is incorrect because it does not include sentiment analysis.` 
+- [ ] **Text Analytics, Translator, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
+- [X] **Language Understanding, Text Analytics, and QnA Maker** ✅: `This is correct because it supports chit-chat, knowledge base, multilingual models, and performs sentiment analysis.`
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>

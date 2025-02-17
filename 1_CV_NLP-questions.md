@@ -31,6 +31,30 @@ Last updated: 2025-01-16
 
 </details>
 
+## Q: Training a Custom Form Recognizer Model
+
+> You build a custom Form Recognizer model. You receive sample files to use for training the model as shown in the following table.
+
+| Name  | Type | Size  |
+|-------|------|-------|
+| File1 | PDF  | 30 MB |
+| File2 | MP4  | 150 MB|
+| File3 | JPG  | 40 MB |
+| File4 | PDF  | 170 MB|
+| File5 | GIF  | 15 MB |
+| File6 | JPG  | 30 MB |
+
+> Which three files can you use to train the model? Each correct answer presents a complete solution.
+
+**Options:**
+
+- [ ]  File1 ✅: `This is correct because it is a PDF file within the size limit for training, which is 50 MB for PDF files.`
+- [ ] File2 ❌: `This is incorrect because MP4 files are not supported for training a Form Recognizer model`
+- [ ]  File3 ✅: `This is correct because it is a JPG file within the size limit for training, which is 50 MB for image files.`
+- [ ] File4 ❌: `This is incorrect because it is a PDF file that exceeds the size limit for training, which is 50 MB for PDF files.`
+- [ ] File5 ❌: `This is incorrect because GIF files are not supported for training a Form Recognizer model`
+- [ ]  File6 ✅: `This is correct because it is a JPG file within the size limit for training, which is 50 MB for image files.`
+
 ## Q: Regenerating an API Key
 
 > You successfully run the following HTTP request.
@@ -48,7 +72,7 @@ Body {"keyName": "Key2"}
 - [ ] `A new query key was generated.` ❌: `This is incorrect because the request regenerates a subscription key, not a query key.`
 - [ ] `A key for Azure Cognitive Services was generated in Azure Key Vault.` ❌: `This is incorrect because the request regenerates a key for the Cognitive Services account, not in Azure Key Vault.`
 - [ ] `The primary subscription key and the secondary subscription key were rotated.` ❌: `This is incorrect because the request regenerates only one key, not both.`
-- [X] `The secondary subscription key was reset.` ✅: `This is correct because the request regenerates the secondary subscription key specified by "Key2".`
+- [ ]  `The secondary subscription key was reset.` ✅: `This is correct because the request regenerates the secondary subscription key specified by "Key2".`
 
 ## Q: Creating a Text Analytics Resource
 
@@ -68,7 +92,7 @@ static void create_resource(CognitiveServicesManagementClient client, string res
 
 **Options:**
 
-- [X] `create_resource(client, "test", "TextAnalytics", "S0", "westus")` ✅: `This is correct because it specifies the Text Analytics resource kind, which is used for sentiment analysis.`
+- [ ]  `create_resource(client, "test", "TextAnalytics", "S0", "westus")` ✅: `This is correct because it specifies the Text Analytics resource kind, which is used for sentiment analysis.`
 - [ ] `create_resource(client, "test", "ComputerVision", "F0", "westus")` ❌: `This is incorrect because it specifies the Computer Vision resource kind, not the Text Analytics resource kind.`
 - [ ] `create_resource(client, "test", "CustomVision.Training", "S0", "westus")` ❌: `This is incorrect because it specifies the Custom Vision Training resource kind, not the Text Analytics resource kind.`
 - [ ] `create_resource(client, "test", "CustomVision.Prediction", "S0", "westus")` ❌: `This is incorrect because it specifies the Custom Vision Prediction resource kind, not the Text Analytics resource kind.`
@@ -88,12 +112,12 @@ __________________________ \
 **Options for the Container Image:**
 
 - [ ] mcr.microsoft.com/azure-cognitive-services/textanalytics/keyphrase ❌: `This is incorrect because it specifies the container image for the keyphrase extraction feature, not the sentiment analysis feature.`
-- [X] mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment ✅: `This is correct because it specifies the container image for the sentiment analysis feature.`
+- [ ]  mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment ✅: `This is correct because it specifies the container image for the sentiment analysis feature.`
 
 **Options for Billing:**
 
 - [ ] http://contoso.blob.core.windows.net ❌: `This is incorrect because it specifies a general Azure Blob Storage endpoint, not the specific billing endpoint for the service.`
-- [X] https://contoso.cognitiveservices.azure.com ✅: `This is correct because it specifies the endpoint URL for the Cognitive Services, which can be used as the billing endpoint.`
+- [ ]  https://contoso.cognitiveservices.azure.com ✅: `This is correct because it specifies the endpoint URL for the Cognitive Services, which can be used as the billing endpoint.`
 
 ## Q: Updating a Computer Vision Resource
 
@@ -121,8 +145,8 @@ __________ https://management.azure.com/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx/re
 - [ ] PUT ❌: `This is incorrect because PUT is used to create or update a resource at a specified URI, ensuring idempotency.`
 - [ ] CognitiveServices ❌: `This is incorrect because it specifies the general Azure Cognitive Services resource, rather than the specific Computer Vision service.`
 - [ ] TextAnalytics ❌: `This is incorrect because it specifies a different service within Azure Cognitive Services, not related to computer vision.`
-- [X] PATCH ✅: `This is correct because PATCH is used to apply partial updates to an existing resource.`
-- [X] ComputerVision ✅: `This is correct because it specifies the specific Azure Cognitive Services resource for computer vision tasks.`
+- [ ]  PATCH ✅: `This is correct because PATCH is used to apply partial updates to an existing resource.`
+- [ ]  ComputerVision ✅: `This is correct because it specifies the specific Azure Cognitive Services resource for computer vision tasks.`
 
 ```http
 PATCH https://management.azure.com/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx/resourceGroups/RG3/providers/Microsoft.CognitiveServices/accounts/CV1?api-version=2017-04-18
@@ -159,8 +183,8 @@ Pick the right values for the correct targets. Each value may be used once, more
 - [ ] **Phrases** ❌: `This is incorrect because it refers to the content, not an action or method. The actual phrases included in the phrase list.`
 - [ ] **SavePhraselistAsync** ❌: `This is incorrect because it is not relevant to the code snippet. Saves the phrase list asynchronously to the language understanding model.`
 - [ ] **UploadPhraseListAsync** ❌: `This is incorrect because it is not relevant to the code snippet. Uploads a phrase list asynchronously to the language understanding model.`
-- [X] **PhraseListCreateObject** ✅: `This is correct because it represents an object for creating a phrase list.`
-- [X] **AddPhraseListAsync** ✅: `This is correct because it adds a phrase list asynchronously.`
+- [ ]  **PhraseListCreateObject** ✅: `This is correct because it represents an object for creating a phrase list.`
+- [ ]  **AddPhraseListAsync** ✅: `This is correct because it adds a phrase list asynchronously.`
 
 Answer:
 
@@ -187,7 +211,7 @@ var result = await client.Features.AddPhraseListAsync(
 - [ ] **Translator, Speech, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
 - [ ] **QnA Maker, Language Understanding, and Dispatch** ❌: `This is incorrect because it does not include sentiment analysis.` 
 - [ ] **Text Analytics, Translator, and Dispatch** ❌: `This is incorrect because it does not include chit-chat or knowledge base support.`
-- [X] **Language Understanding, Text Analytics, and QnA Maker** ✅: `This is correct because it supports chit-chat, knowledge base, multilingual models, and performs sentiment analysis.`
+- [ ]  **Language Understanding, Text Analytics, and QnA Maker** ✅: `This is correct because it supports chit-chat, knowledge base, multilingual models, and performs sentiment analysis.`
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>

@@ -15,8 +15,8 @@ Last updated: 2025-01-16
 ## Content
 
 - [Artificial Intelligence: Sample Questions and Answers](./0_AI-questions.md)
-- [Machine Learning: Sample Questions and Answers](./1_ML-questions.md)
-- [Computer Vision: Sample Questions and Answers](./2_CV-questions.md)
+- [Computer Vision & NLP: Sample Questions and Answers](./1_CV_NLP-questions.md)
+- [Generative AI: Sample Questions and Answers](./2_GenAI-questions.md)
 
 ## Skills measured
 

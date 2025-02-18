@@ -119,10 +119,10 @@ To provide real-time translation of spoken language:___________________________
 
 > You have a collection of 50,000 scanned documents that contain text. You plan to make the text available through Azure AI Search. You need to configure an enrichment pipeline to perform optical character recognition (OCR) and text analytics. The solution must minimize costs. What should you attach to the skillset?
 
-- [ ] A. a new Computer Vision resource ❌: `This is incorrect because while the Computer Vision service can perform OCR, it does not provide text analytics capabilities.`
-- [ ] B. a free (limited enrichments) AI Services resource ❌: `This is incorrect because a multiservice account does not support the free tier (F0), and the free tier is not suitable for processing a large volume of documents like 50,000.`
-- [ ] C. an Azure Machine Learning Designer pipeline ❌: `This is incorrect because an Azure Machine Learning Designer pipeline is not required for OCR and text analytics in this scenario.`
-- [ ] D. a new AI Services resource that uses the S0 pricing tier ✅: `This is correct because a multiservice AI Services resource using the S0 pricing tier can provide both OCR and text analytics capabilities, and it is suitable for processing a large volume of documents.`
+- [ ] a new Computer Vision resource ❌: `This is incorrect because while the Computer Vision service can perform OCR, it does not provide text analytics capabilities.`
+- [ ] a free (limited enrichments) AI Services resource ❌: `This is incorrect because a multiservice account does not support the free tier (F0), and the free tier is not suitable for processing a large volume of documents like 50,000.`
+- [ ] an Azure Machine Learning Designer pipeline ❌: `This is incorrect because an Azure Machine Learning Designer pipeline is not required for OCR and text analytics in this scenario.`
+- [ ] a new AI Services resource that uses the S0 pricing tier ✅: `This is correct because a multiservice AI Services resource using the S0 pricing tier can provide both OCR and text analytics capabilities, and it is suitable for processing a large volume of documents.`
 
 ## Q4: Managing Query Throttling in Azure AI Search
 
@@ -151,7 +151,6 @@ To provide real-time translation of spoken language:___________________________
 - [ ] Deploy `service1` with a public endpoint and configure a service endpoint in `vnet1`. ❌: `This is incorrect because service endpoints do not provide the same level of security as private endpoints and still allow traffic to traverse the public internet.`
 - [ ] Deploy `service1` with a private endpoint in a different virtual network and configure Azure Private Link. ❌: `This is incorrect because deploying `service1` in a different virtual network would require additional configuration and does not ensure direct connectivity without traversing the public internet.`
 
-
 ## Q7: Ensuring Fairness in a Sales System
 
 > You are developing a new sales system that will process video and text from a public-facing website. To ensure fairness, you plan to implement measures that prevent bias in the system's recommendations and decisions. Which two actions should you take to ensure fairness? 
@@ -176,7 +175,6 @@ To provide real-time translation of spoken language:___________________________
 - [ ] Distribute a docker run script. ❌ `This is incorrect because distributing a docker run script is not necessary for controlling access or preventing billing and API information from being stored in command-line histories.`
 - [ ] Push the image to Docker Hub. ❌ `This is incorrect because pushing the image to Docker Hub does not meet the requirement of controlling access using Azure RBAC.`
 
-
 ## Q9: Ensuring Direct Connectivity for Azure AI Search
 
 > You create a web app named `app1` that runs on an Azure virtual machine named `vm1`. `vm1` is on an Azure virtual network named `vnet1`. You plan to create a new Azure AI Search service named `service1`. You need to ensure that `app1` can connect directly to `service1` without routing traffic over the public internet. <br/>
@@ -189,10 +187,10 @@ To provide real-time translation of spoken language:___________________________
 
 > You have a Language Understanding resource named `lu1`. You build and deploy an Azure bot named `bot1` that uses `lu1`. You need to ensure that `bot1` adheres to the Microsoft responsible AI principle of inclusiveness. How should you extend `bot1`?
 
-- [ ] A. Implement authentication for `bot1` ❌: `This is incorrect because implementing authentication does not directly address the principle of inclusiveness.`
-- [ ] B. Enable active learning for `lu1` ❌: `This is incorrect because enabling active learning improves the model's accuracy over time but does not directly address inclusiveness.`
-- [ ] C. Host `lu1` in a container ❌: `This is incorrect because hosting `lu1` in a container does not directly address the principle of inclusiveness.`
-- [ ] D. Add Direct Line Speech to `bot1` ✅: `This is correct because adding Direct Line Speech allows the bot to support speech interactions, making it more accessible and inclusive for users who may have difficulty typing or reading.`
+- [ ] Implement authentication for `bot1` ❌: `This is incorrect because implementing authentication does not directly address the principle of inclusiveness.`
+- [ ] Enable active learning for `lu1` ❌: `This is incorrect because enabling active learning improves the model's accuracy over time but does not directly address inclusiveness.`
+- [ ] Host `lu1` in a container ❌: `This is incorrect because hosting `lu1` in a container does not directly address the principle of inclusiveness.`
+- [ ] Add Direct Line Speech to `bot1` ✅: `This is correct because adding Direct Line Speech allows the bot to support speech interactions, making it more accessible and inclusive for users who may have difficulty typing or reading.`
 
 ## Q11: Ensuring Transparency and Privacy in a Sales System
 
@@ -209,10 +207,10 @@ To provide real-time translation of spoken language:___________________________
 > Your company receives numerous invoices in English and wants to automate the process of extracting key information such as invoice number, date, and total amount. The solution should require minimal development effort and be able to handle various invoice formats. Which Azure service should you use?
 
 
-- [ ] **A. Custom Vision** ❌: `This is incorrect because Custom Vision is used for image classification and object detection, not for extracting text from documents.`
-- [ ] **B. Form Recognizer** ✅: `This is correct because Form Recognizer is designed to extract key information from documents, such as invoices, with minimal development effort.`
-- [ ] **C Computer Vision** ❌: `This is incorrect because Computer Vision is used for analyzing images and extracting text, but it is not specialized for extracting structured information from documents like invoices.`
-- [ ] **D. Personalizer** ❌: `This is incorrect because Personalizer is used for creating personalized user experiences, not for extracting information from documents.`
+- [ ] **Custom Vision** ❌: `This is incorrect because Custom Vision is used for image classification and object detection, not for extracting text from documents.`
+- [ ] **Form Recognizer** ✅: `This is correct because Form Recognizer is designed to extract key information from documents, such as invoices, with minimal development effort.`
+- [ ] **Computer Vision** ❌: `This is incorrect because Computer Vision is used for analyzing images and extracting text, but it is not specialized for extracting structured information from documents like invoices.`
+- [ ] **Personalizer** ❌: `This is incorrect because Personalizer is used for creating personalized user experiences, not for extracting information from documents.`
 
 ## Q13: Reducing Throttling in Azure AI Search
 
@@ -532,7 +530,6 @@ ApiKey={API_KEY}
 - **Eula=accept**: Accepts the End User License Agreement.
 - **Billing={ENDPOINT_URI}**: Specifies the endpoint URI for billing purposes.
 - **ApiKey={API_KEY}**: Specifies the API key for authentication.
-
 
 ## Q34: Configuring Capacity for an Azure OpenAI Resource
 

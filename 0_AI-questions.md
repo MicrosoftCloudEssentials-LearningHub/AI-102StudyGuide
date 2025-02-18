@@ -31,6 +31,52 @@ Last updated: 2025-01-16
 <details>
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
+- [Q1: Configuring Index Attributes for Azure AI Search](#q1-configuring-index-attributes-for-azure-ai-search)
+- [Q2: Configuring Azure AI Services for Text Translation](#q2-configuring-azure-ai-services-for-text-translation)
+- [Q3: Configuring an Enrichment Pipeline for OCR and Text Analytics](#q3-configuring-an-enrichment-pipeline-for-ocr-and-text-analytics)
+- [Q4: Managing Query Throttling in Azure AI Search](#q4-managing-query-throttling-in-azure-ai-search)
+- [Q5: Choosing the Right Azure Service for Predictive Maintenance](#q5-choosing-the-right-azure-service-for-predictive-maintenance)
+- [Q6: Configuring Private Endpoint for Azure AI Search](#q6-configuring-private-endpoint-for-azure-ai-search)
+- [Q7: Ensuring Fairness in a Sales System](#q7-ensuring-fairness-in-a-sales-system)
+- [Q8: Deploying Anomaly Detector API Containers](#q8-deploying-anomaly-detector-api-containers)
+- [Q9: Ensuring Direct Connectivity for Azure AI Search](#q9-ensuring-direct-connectivity-for-azure-ai-search)
+- [Q10: Ensuring Inclusiveness in an Azure Bot](#q10-ensuring-inclusiveness-in-an-azure-bot)
+- [Q11: Ensuring Transparency and Privacy in a Sales System](#q11-ensuring-transparency-and-privacy-in-a-sales-system)
+- [Q12: Automating Invoice Processing](#q12-automating-invoice-processing)
+- [Q13: Reducing Throttling in Azure AI Search](#q13-reducing-throttling-in-azure-ai-search)
+- [Q14: Ensuring Direct Connectivity for Azure AI Search](#q14-ensuring-direct-connectivity-for-azure-ai-search)
+- [Q15: Deploying a Language Understanding Application to a Container](#q15-deploying-a-language-understanding-application-to-a-container)
+- [Q16: Enabling Server-Side Encryption with Customer-Managed Keys in Azure AI Search](#q16-enabling-server-side-encryption-with-customer-managed-keys-in-azure-ai-search)
+- [Q17: Ensuring Responsible AI Principles in Sentiment Analysis for Bonuses](#q17-ensuring-responsible-ai-principles-in-sentiment-analysis-for-bonuses)
+- [Q18: Directing Messages to Language Support Teams](#q18-directing-messages-to-language-support-teams)
+- [Q19: Configuring IP Firewall Rules for Azure AI Search](#q19-configuring-ip-firewall-rules-for-azure-ai-search)
+- [Q20: Converting Speech to Text for Streaming MP3 Data](#q20-converting-speech-to-text-for-streaming-mp3-data)
+- [Q21: Developing an Automated Call Handling System](#q21-developing-an-automated-call-handling-system)
+- [Q22: Extracting Data from Receipts Using Form Recognizer](#q22-extracting-data-from-receipts-using-form-recognizer)
+    - [Tip Reference](#tip-reference)
+- [Q23: Reducing Throttling in Azure AI Search](#q23-reducing-throttling-in-azure-ai-search)
+- [Q24: Analyzing Extracted Information from Purchase Orders Using Power BI](#q24-analyzing-extracted-information-from-purchase-orders-using-power-bi)
+- [Q25: Securing an Azure AI Search Resource](#q25-securing-an-azure-ai-search-resource)
+- [Q26: Building a Monitoring Solution for PPE Compliance](#q26-building-a-monitoring-solution-for-ppe-compliance)
+- [Q27: Building an App for Anomaly Detection and Incident Alerts](#q27-building-an-app-for-anomaly-detection-and-incident-alerts)
+- [Q28: Hosting an Azure AI Services Model with Limited Connectivity](#q28-hosting-an-azure-ai-services-model-with-limited-connectivity)
+- [Q29: Detecting Anomalies in Real-Time Sensor Data](#q29-detecting-anomalies-in-real-time-sensor-data)
+- [Q30: Ensuring Confidential Documents Remain On-Premises with Azure AI Services](#q30-ensuring-confidential-documents-remain-on-premises-with-azure-ai-services)
+- [Q31: Authenticating to the Speech Service Using Azure AD](#q31-authenticating-to-the-speech-service-using-azure-ad)
+- [Q32: Implementing Real-Time Translation in a Multilingual Chat Application](#q32-implementing-real-time-translation-in-a-multilingual-chat-application)
+- [Q33: Hosting an Anomaly Detector Instance on a Docker Host](#q33-hosting-an-anomaly-detector-instance-on-a-docker-host)
+- [Q34: Configuring Capacity for an Azure OpenAI Resource](#q34-configuring-capacity-for-an-azure-openai-resource)
+- [Q35: Detecting Negative Comments Using Sentiment Analysis API](#q35-detecting-negative-comments-using-sentiment-analysis-api)
+- [Q36: Providing Access to Azure OpenAI Resource and Connecting to Deployments](#q36-providing-access-to-azure-openai-resource-and-connecting-to-deployments)
+- [Q37: Configuring App1 to Connect to Azure OpenAI Model AI1](#q37-configuring-app1-to-connect-to-azure-openai-model-ai1)
+- [Q38: Monitoring Temperature Data and Generating Alerts](#q38-monitoring-temperature-data-and-generating-alerts)
+- [Q39: Implementing Predictive Maintenance with Azure Services](#q39-implementing-predictive-maintenance-with-azure-services)
+- [Q40: Indexing a Large Video File Using Azure Video Indexer](#q40-indexing-a-large-video-file-using-azure-video-indexer)
+- [Q41: Securing Access to Azure AI Service Resource](#q41-securing-access-to-azure-ai-service-resource)
+- [Q42: Monitoring a Video Stream and Detecting Questions](#q42-monitoring-a-video-stream-and-detecting-questions)
+- [Q43: Identifying the Created Azure AI Services Account in Azure DevOps Pipeline](#q43-identifying-the-created-azure-ai-services-account-in-azure-devops-pipeline)
+- [Q44: Extracting Data from Hand-Written Survey Responses Using Azure AI Document Intelligence](#q44-extracting-data-from-hand-written-survey-responses-using-azure-ai-document-intelligence)
+
 </details>
 
 ## Q1: Configuring Index Attributes for Azure AI Search
@@ -41,7 +87,7 @@ Last updated: 2025-01-16
 > - Ensure that users can perform drill down filtering based on category. <br/>
 > Which index attributes should you configure for the category field?
 
-- [ ] A. searchable, sortable, and retrievable ❌: `This is incorrect because while these attributes allow searching and sorting, they do not support drill down filtering.`
+- [ ] searchable, sortable, and retrievable ❌: `This is incorrect because while these attributes allow searching and sorting, they do not support drill down filtering.`
 - [ ] retrievable, filterable, and sortable ❌: `This is incorrect because while these attributes allow filtering and sorting, they do not support searching for words in the category field.`
 - [ ] retrievable, facetable, and key ❌: `This is incorrect because the 'key' attribute is used for unique identifiers, not for enabling search or filtering capabilities.`
 - [ ] searchable, facetable, and retrievable ✅: `This is correct because these attributes allow the category field to be included in search results, support searching for words in the category field, and enable drill down filtering based on category.`

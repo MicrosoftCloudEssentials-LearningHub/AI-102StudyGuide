@@ -29,8 +29,27 @@ Last updated: 2025-01-16
 <details>
 <summary><b>List of questions/answers </b> (Click to expand)</summary>
 
-</details>
+- [Q1: Making a Direct API Request Using Smart Cropping Feature](#q1-making-a-direct-api-request-using-smart-cropping-feature)
+- [Q2: Ensuring Completion of OCR Operation Using Computer Vision Client Library](#q2-ensuring-completion-of-ocr-operation-using-computer-vision-client-library)
+- [Q3: Managing Access in Language Understanding LUIS](#q3-managing-access-in-language-understanding-luis)
+- [Q4: Provisioning a QnA Maker Service](#q4-provisioning-a-qna-maker-service)
+- [Q5: Implementing Sentiment Analysis in Customer Feedback System](#q5-implementing-sentiment-analysis-in-customer-feedback-system)
+- [Q6: Building a Model for an iOS App to Identify Animals](#q6-building-a-model-for-an-ios-app-to-identify-animals)
+- [Q7: Configuring an App for Vision Impaired Users](#q7-configuring-an-app-for-vision-impaired-users)
+- [Q8: Training a Custom Form Recognizer Model](#q8-training-a-custom-form-recognizer-model)
+- [Q9: Regenerating an API Key](#q9-regenerating-an-api-key)
+- [Q10: Creating a Text Analytics Resource](#q10-creating-a-text-analytics-resource)
+- [Q11: Deploying Text Analytics API Container](#q11-deploying-text-analytics-api-container)
+- [Q12: Updating a Computer Vision Resource](#q12-updating-a-computer-vision-resource)
+- [Q13: Language Understanding Model](#q13-language-understanding-model)
+- [Q14: Building a Multilingual Chatbot with Sentiment Analysis](#q14-building-a-multilingual-chatbot-with-sentiment-analysis)
+- [Q15: Implementing Image Classification with Custom Vision](#q15-implementing-image-classification-with-custom-vision)
+- [Q16: Exporting a Custom Vision Model for Offline Use](#q16-exporting-a-custom-vision-model-for-offline-use)
+- [Q17: Analyzing Image Using Computer Vision Client Library](#q17-analyzing-image-using-computer-vision-client-library)
+- [Q18: Implementing Real-Time Sentiment Analysis in a Customer Feedback System](#q18-implementing-real-time-sentiment-analysis-in-a-customer-feedback-system)
+- [Q19: Recognizing Employees' Faces Using the Face Recognition API](#q19-recognizing-employees-faces-using-the-face-recognition-api)
 
+</details>
 
 ## Q1: Making a Direct API Request Using Smart Cropping Feature
 

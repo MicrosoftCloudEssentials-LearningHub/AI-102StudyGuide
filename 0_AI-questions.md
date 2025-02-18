@@ -275,7 +275,7 @@ To provide real-time translation of spoken language:___________________________
 ## Q18: Directing Messages to Language Support Teams
 
 > You are building an app that will process incoming email and direct messages to either French or English language support teams. Which Azure AI Services API should you use? <br/>
->  {Value1}{Value2} 
+> Answer: {Value1}{Value2} 
 
 **Value1 Options:**
 
@@ -670,7 +670,6 @@ ApiKey={API_KEY}
 - [ ] Custom neural ✅: `This is correct because a custom neural model is suitable for extracting data from documents with inconsistent layouts, such as hand-written survey responses.`
 - [ ] Custom template ❌: `This is incorrect because custom template models are better suited for documents with consistent layouts.`
 - [ ] Identity document (ID) ❌: `This is incorrect because identity document models are specifically designed for processing identity documents, not survey responses.`
-
 
 <div align="center">
   <h3 style="color: #4CAF50;">Total Visitors</h3>

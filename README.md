@@ -35,7 +35,9 @@ Last updated: 2025-01-16
 
 Badge from [Credly](https://www.credly.com/badges/ee262f47-bc55-4007-aae0-e7ebdfb156ad)
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 2px; padding: 2px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-268-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->

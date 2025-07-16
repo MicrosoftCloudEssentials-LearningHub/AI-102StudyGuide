@@ -671,7 +671,9 @@ ApiKey={API_KEY}
 - [ ] Custom template ❌: `This is incorrect because custom template models are better suited for documents with consistent layouts.`
 - [ ] Identity document (ID) ❌: `This is incorrect because identity document models are specifically designed for processing identity documents, not survey responses.`
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-996-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->

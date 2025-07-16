@@ -467,9 +467,10 @@ For each of the following statements, select if the statement is true.
 - [ ] The code will work for up to 10,000 people. ❌ `This is incorrect because the Face API supports up to 1,000,000 people per person group.`
 - [ ] `add_face` can be called multiple times to add multiple face images to a person. ✅ `This is correct because the `add_face` function can be called multiple times to add multiple face images to a person.`
 
-
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-996-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-16</p>
 </div>
+<!-- END BADGE -->
 

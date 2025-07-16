@@ -37,7 +37,7 @@ Badge from [Credly](https://www.credly.com/badges/ee262f47-bc55-4007-aae0-e7ebdf
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-91-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-268-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-16</p>
 </div>
 <!-- END BADGE -->

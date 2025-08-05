@@ -51,6 +51,89 @@ Last updated: 2025-08-01
 
 </details>
 
+> [!TIP]
+> **Computer Vision Services:**
+
+| Service | Use Case | Key Features |
+|---------|----------|--------------|
+| **Computer Vision** | General image analysis | OCR, image analysis, smart cropping, thumbnails |
+| **Custom Vision** | Custom image classification/detection | Train custom models, export for offline use |
+| **Face** | Face detection and recognition | Face detection, identification, verification |
+| **Form Recognizer** | Document processing | Extract text, tables, key-value pairs from forms |
+
+> [!TIP]
+> **Natural Language Processing Services:**
+
+| Service | Use Case | Key Features |
+|---------|----------|--------------|
+| **Text Analytics** | Text analysis and insights | Sentiment analysis, key phrase extraction, language detection |
+| **Language Understanding (LUIS)** | Intent recognition | Build conversational AI, understand user intents |
+| **QnA Maker** | Knowledge base chatbots | Create FAQ bots, question-answer pairs |
+| **Translator** | Text translation | Multi-language translation, document translation |
+
+> [!TIP]
+> **Computer Vision API Endpoints:**
+
+| Endpoint | Purpose | Parameters |
+|----------|---------|------------|
+| **analyze** | General image analysis | visualFeatures, details, language |
+| **ocr** | Optical character recognition | language, detectOrientation |
+| **read** | Modern OCR for text extraction | language (async operation) |
+| **generateThumbnail** | Smart cropping thumbnails | width, height, smartCropping |
+| **describe** | Image description generation | maxCandidates, language |
+
+> [!TIP]
+> **Text Analytics Capabilities:**
+
+| Feature | Description | Output |
+|---------|-------------|--------|
+| **Sentiment Analysis** | Determine emotional tone | Positive, Negative, Neutral + confidence |
+| **Key Phrase Extraction** | Identify important phrases | List of key phrases |
+| **Language Detection** | Identify text language | Language code + confidence |
+| **Named Entity Recognition** | Extract entities | People, places, organizations, etc. |
+
+> [!TIP]
+> **Custom Vision Project Types:**
+
+| Project Type | Use Case | Output |
+|--------------|----------|--------|
+| **Classification** | Categorize entire images | Single or multiple tags per image |
+| **Object Detection** | Find and locate objects | Bounding boxes with labels |
+| **Multi-class** | One tag per image | Single category assignment |
+| **Multi-label** | Multiple tags per image | Multiple category assignments |
+
+> [!TIP]
+> **Custom Vision Domains:**
+
+| Domain | Use Case | Optimization |
+|--------|----------|--------------|
+| **General** | Wide variety of images | Balanced performance |
+| **General (compact)** | Mobile/edge deployment | Smaller model size |
+| **Food** | Food and dishes | Food-specific features |
+| **Landmarks** | Buildings and monuments | Landmark recognition |
+| **Retail** | Products and items | Retail-specific features |
+
+> [!TIP]
+> **Form Recognizer Supported Formats:**
+
+| Format | Max Size | Use Case |
+|--------|----------|----------|
+| **PDF** | 50 MB | Multi-page documents |
+| **JPG/JPEG** | 50 MB | Image documents |
+| **PNG** | 50 MB | Image documents |
+| **BMP** | 50 MB | Image documents |
+| **TIFF** | 50 MB | Multi-page images |
+
+> [!TIP]
+> **Azure AI Services Authentication:**
+
+| Method | Use Case | Security Level |
+|--------|----------|----------------|
+| **Subscription Key** | Simple API access | Basic |
+| **Azure AD Token** | Enterprise applications | High |
+| **Managed Identity** | Azure services | Highest |
+| **Service Principal** | Application authentication | High |
+
 ## Q1: Making a Direct API Request Using Smart Cropping Feature
 
 > You have a Computer Vision resource named contoso1 that is hosted in the West US Azure region. You need to use contoso1 to make a direct API request of a product photo by using the smart cropping feature. How should you complete the API URL? 
